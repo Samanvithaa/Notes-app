@@ -1,0 +1,108 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 33%,
+            rgba(0, 212, 255, 1) 100%);
+    font-family: 'Poppins', sans-serif, 'Roboto Condensed', sans-serif, 'Gabarito', cursive;
+    color: rgb(242, 236, 236);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 50px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    font-size: 2.5em;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+}
+
+.note-input {
+    width: 100%;
+    padding: 25px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #0a0909;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    background: #f5f5f9;
+    color: #002765;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgba(0, 212, 255, 1) 100%;
+    color: #fff;
+}
+
+.note-list {
+    list-style: none;
+    padding: 20px;
+}
+
+.note-item {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    white-space: pre-wrap;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.note-delete {
+    float: right;
+    color: white;
+    background-color: rgb(255, 69, 69);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    top: 20px;
+    left: 3%;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+}
