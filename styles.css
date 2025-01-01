@@ -41,13 +41,14 @@ h1:hover::after {
 }
 
 .note-input {
-    width: 100%;
+    width: 1180px;
+    align-self: center;
     padding: 25px;
-    height: 100px;
+    height: 35px;
     margin-bottom: 10px;
     border: 1px solid #0a0909;
-    border-radius: 6px;
-    font-size: 25px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 button {
@@ -68,6 +69,8 @@ button:hover {
 }
 
 .note-list {
+    width: 1180px;
+    height: auto;
     list-style: none;
     padding: 20px;
 }
@@ -77,7 +80,7 @@ button:hover {
     padding: 10px;
     width: 100%;
     white-space: pre-wrap;
-    height: auto;
+    height:auto;
     margin-bottom: 10px;
     border-radius: 5px;
     color: black;
@@ -89,20 +92,8 @@ button:hover {
     color: white;
     background-color: rgb(255, 69, 69);
     border: 2px solid rgb(255, 0, 0);
-    padding: 5px 5px;
+    padding: 5px 5px 5px 5px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-}
-
-.back-button {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    top: 20px;
-    left: 3%;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 50px;
-    text-align: center;
 }
